@@ -65,3 +65,147 @@ body {
     text-align: center;
     line-height: 100px;
 }
+
+.input-from {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.nav-item.active {
+    color: #44BAFA;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #44BAFA;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.phone-login,
+.account-login {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.phone-login.active,
+.account-login.active {
+    display: block;
+    opacity: 1;
+}
+
+.verify-code {
+    position: relative;
+}
+
+.send-code {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 12px;
+    background-color: #44BAFA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.send-code:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #44BAFA;
+}
+
+.forget-pwd {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #44BAFA;
+    cursor: pointer;
+    font-size: 14px;
+    padding-right: 12px;
+}
+
+.login-btn button {
+    width: 100%;
+    padding: 12px;
+    background-color: #44BAFA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.login-btn button:hover {
+    background-color: #3aa8e9;
+}
+
+.register {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #44BAFA;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.user-treaty {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.user-treaty a {
+    color: #44BAFA;
+    text-decoration: none;
+}
+
+.user-treaty input[type="checkbox"] {
+    margin-right: 5px;
+}
