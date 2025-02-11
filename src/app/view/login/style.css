@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'dd';
+    src: url('../../../static/font/DingTalk\ JinBuTi.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.top-nav {
+    height: 30px;
+    /* background-color: #eaeaea; */
+}
+
+.top-nav .left-box {
+    float: left;
+    margin-left: 10px;
+    width: auto;
+    /* background-color: azure; */
+}
+
+.logo-icon {
+    font-family: 'dd';
+    font-size: 25px;
+    color: #44BAFA;
+    user-select: none;
+}
+
+.logo-font {
+    font-family: 'dd';
+    font-size: 40px;
+    user-select: none;
+}
+
+.top-nav .right-box {
+    float: right;
+    margin-right: 10px;
+    width: auto;
+    height: 30px;
+    /* background-color: black; */
+}
+
+
+.top-nav .right-box .mini-w,
+.top-nav .right-box .close-w {
+    float: left;
+    font-size: 25px;
+    transition: all 0.6s;
+}
+
+.top-nav .right-box .mini-w:hover {
+    color: #d4d4d4;
+}
+
+.top-nav .right-box .close-w:hover {
+    color: #f40;
+}
+
+.logo-ar {
+    width: 100%;
+    height: 100px;
+    /* background-color: blue; */
+    text-align: center;
+    line-height: 100px;
+}
