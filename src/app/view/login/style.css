@@ -76,6 +76,7 @@ body {
     display: flex;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .nav-item {
@@ -83,6 +84,7 @@ body {
     cursor: pointer;
     position: relative;
     user-select: none;
+    text-align: center;
 }
 
 .nav-item.active {
